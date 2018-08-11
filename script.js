@@ -11,12 +11,10 @@ $(window).resize(function() {
 // set grayed layer on box hover
 $box.hover(
     function() {
-        $(".effects", this).addClass("on");
-        $("div.description", this).addClass("visible");
+        $(".box-description", this).addClass("visible");
     },
     function() {
-        $(".effects", this).removeClass("on");
-        $("div.description", this).removeClass("visible")
+        $(".box-description", this).removeClass("visible")
     }
 );
 
