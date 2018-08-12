@@ -71,20 +71,19 @@ icon {
     grid-template-rows: repeat(2, 1fr);
 }
 
-.blog {
+.angular {
     background: url("./assets/img/blog.jpg");
-    background-color: rgba(109, 108, 103, 0.7);
 }
 
-.workshop {
+.commercial {
     background: url("./assets/img/workshop.jpg");
 }
 
-.cookbook {
-    background: url("./assets/img/cookbook.jpg");
+.react {
+    background: url("./assets/img/book.jpg");
 }
 
-.portfolio {
+.about-me {
     background: url("./assets/img/portfolio.jpg");
 }
 
@@ -149,8 +148,13 @@ icon {
     font-size: 30px;
 }
 
+
 .box-icon:hover {
     color: gray;
+}
+
+.fa-external-link{
+    font-size: 80%;
 }
 
 .footer {
