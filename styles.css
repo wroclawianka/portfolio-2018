@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body{
+body {
     color: white;
 }
 
@@ -56,6 +56,22 @@ icon {
     padding: 0.2em;
 }
 
+.bc-content .title {
+    position: relative;
+    z-index: 1;
+}
+
+.bc-content .title:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 33%;
+    border-bottom: 1px solid white;
+    margin: 0 33%;
+}
+
 .bc-content .icon {
     font-size: 29px;
     color: #440c38;
@@ -94,35 +110,38 @@ icon {
     background-position: center;
     background-size: 100% auto;
     text-align: center;
-    /* background-size: auto 100%; */
     position: relative;
 }
 
-.box .layer{
+.box .layer {
     position: absolute;
     width: 100%;
     height: 100%;
     transition: 1s;
 }
 
-.box:hover .layer{
+.box:hover .layer {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* media query! */
 .box.narrow-screen {
     background-size: auto 100%;
 }
 
 .box-content {
-    position: relative;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: lighter;
-    font-size: 125%;
-    width: 100%;
     width: 80%;
     display: inline-block;
     padding-top: 10px;
+    /* position */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    /* text */
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: lighter;
+    font-size: 125%;
 }
 
 .box-description {
@@ -148,12 +167,11 @@ icon {
     font-size: 30px;
 }
 
-
 .box-icon:hover {
     color: gray;
 }
 
-.fa-external-link{
+.fa-external-link {
     font-size: 80%;
 }
 
@@ -162,6 +180,4 @@ icon {
     bottom: 0;
     right: 5px;
     font-family: 'Open Sans Condensed', sans-serif;
-    /* media query  */
-    /* font-size: 80%; */
 }
