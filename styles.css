@@ -167,7 +167,7 @@ icon {
     font-size: 30px;
 }
 
-.box-icon:hover {
+a:hover {
     color: gray;
 }
 
