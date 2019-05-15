@@ -23,7 +23,7 @@ icon {
 .bussines-card {
     margin: auto;
     padding: 2em;
-    background-color: #1a001a;
+    background-color: #131026;
     /* position */
     position: fixed;
     top: 0;
@@ -74,11 +74,11 @@ icon {
 
 .bc-content .icon {
     font-size: 29px;
-    color: #440c38;
+    color: #282251;
 }
 
 .bc-content .icon:hover {
-    color: #660066
+    color: #362e6d;
 }
 
 .grid-container {
@@ -88,7 +88,7 @@ icon {
 }
 
 .angular {
-    background: url("./assets/img/blog.jpg");
+    background: url("./assets/img/praha.jpg");
 }
 
 .commercial {
@@ -96,7 +96,7 @@ icon {
 }
 
 .react {
-    background: url("./assets/img/book.jpg");
+    background: url("./assets/img/pattern.jpg");
 }
 
 .about-me {
@@ -118,10 +118,11 @@ icon {
     width: 100%;
     height: 100%;
     transition: 1s;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .box:hover .layer {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .box.narrow-screen {
@@ -130,6 +131,7 @@ icon {
 
 .box-content {
     width: 80%;
+    min-height: 55%;
     display: inline-block;
     padding-top: 10px;
     /* position */
@@ -161,6 +163,7 @@ icon {
 .box-header {
     font-family: 'Fredericka the Great', cursive;
     font-weight: lighter;
+    margin-bottom: 20px;
 }
 
 .box-icon {
@@ -180,4 +183,5 @@ a:hover {
     bottom: 0;
     right: 5px;
     font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 80%;
 }
