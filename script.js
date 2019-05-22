@@ -4,21 +4,21 @@ let $box = $(".box");
 setBackground();
 
 // set background on resize
-$(window).resize(function() {
+$(window).resize(function () {
     setBackground();
 });
 
 // set grayed layer on box hover
 $box.hover(
-    function() {
+    function () {
         $(".box-description", this).addClass("visible");
     },
-    function() {
+    function () {
         $(".box-description", this).removeClass("visible")
     }
 );
 
 function setBackground() {
     ((window.innerWidth / window.innerHeight) < 1.5) ?
-    $box.addClass("narrow-screen"): $box.removeClass("narrow-screen");
+        $box.addClass("narrow-screen") : $box.removeClass("narrow-screen");
 }

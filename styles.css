@@ -12,34 +12,34 @@ a {
     text-decoration: none;
 }
 
-icon {
-    padding: 0.3em;
-}
-
 .container {
     height: 100vh;
 }
 
 .bussines-card {
     margin: auto;
-    padding: 2em;
-    background-color: #131026;
-    /* position */
+    padding: 0.4em;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1;
-    /* size */
+    z-index: 10;
     width: 20%;
     height: 20%;
-    max-width: 200px;
-    max-width: 200px;
-    /* text */
+    max-height: 220px;
+    max-width: 290px;
     text-align: center;
     font-family: 'Fredericka the Great', cursive;
     font-weight: lighter;
+    border: #131026 solid 4px;
+}
+
+.bussines-card-inner {
+    background-color: #131026;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .bc-content {
@@ -109,7 +109,6 @@ icon {
     text-align: center;
     background-position: center;
     background-size: 100% auto;
-    text-align: center;
     position: relative;
 }
 
