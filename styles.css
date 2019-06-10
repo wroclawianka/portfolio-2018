@@ -18,7 +18,7 @@ a {
 
 .business-card {
     margin-bottom: 20px;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
