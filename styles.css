@@ -80,13 +80,8 @@ a {
 }
 
 .box-description {
-    color: transparent;
-    transition: 2s;
-    padding: 0 10%;
-}
-
-.box-description.visible {
     color: white;
+    padding: 0 10%;
 }
 
 .box-description a {
@@ -190,5 +185,14 @@ a:hover {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+    }
+
+    .box-description {
+        color: transparent;
+        transition: 2s;
+    }
+
+    .box-description.visible {
+        color: white;
     }
 }
