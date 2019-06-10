@@ -54,10 +54,6 @@ a {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.box:hover .layer {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
 .box.narrow-screen {
     background-size: auto 100%;
 }
@@ -194,5 +190,9 @@ a:hover {
 
     .box-description.visible {
         color: white;
+    }
+
+    .box:hover .layer {
+        background-color: rgba(0, 0, 0, 0.8);
     }
 }
