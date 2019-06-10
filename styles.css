@@ -45,6 +45,10 @@ a {
     position: relative;
 }
 
+.box.horizontal-img {
+    background-size: auto 100%;
+}
+
 
 .box .layer {
     position: absolute;
@@ -52,10 +56,6 @@ a {
     height: 100%;
     transition: 1s;
     background-color: rgba(0, 0, 0, 0.4);
-}
-
-.box.narrow-screen {
-    background-size: auto 100%;
 }
 
 .box-content {
@@ -198,5 +198,9 @@ a:hover {
 
     .box {
         height: 100%;
+    }
+
+    .box.horizontal-img {
+        background-size: 100% auto;
     }
 }
