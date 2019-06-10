@@ -17,74 +17,7 @@ a {
 }
 
 .bussines-card {
-    margin: auto;
-    padding: 0.4em;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    width: 20%;
-    height: 20%;
-    max-height: 220px;
-    max-width: 290px;
-    text-align: center;
-    font-family: 'Fredericka the Great', cursive;
-    font-weight: lighter;
-    border: #131026 solid 4px;
-}
-
-.bussines-card-inner {
-    background-color: #131026;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.bc-content {
-    min-width: 250px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    font-size: 30px;
-    letter-spacing: 2.5px;
-}
-
-.bc-content p {
-    padding: 0.2em;
-}
-
-.bc-content .title {
-    position: relative;
-    z-index: 1;
-}
-
-.bc-content .title:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 1px;
-    width: 33%;
-    border-bottom: 1px solid white;
-    margin: 0 33%;
-}
-
-.bc-content .icon {
-    font-size: 29px;
-    color: #282251;
-}
-
-.bc-content .icon:hover {
-    color: #362e6d;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: none;
 }
 
 .angular {
@@ -111,6 +44,7 @@ a {
     background-size: 100% auto;
     position: relative;
 }
+
 
 .box .layer {
     position: absolute;
@@ -183,4 +117,78 @@ a:hover {
     right: 5px;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+    .bussines-card {
+        display: initial;
+        margin: auto;
+        padding: 0.4em;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        width: 20%;
+        height: 20%;
+        max-height: 220px;
+        max-width: 290px;
+        text-align: center;
+        font-family: 'Fredericka the Great', cursive;
+        font-weight: lighter;
+        border: #131026 solid 4px;
+    }
+
+    .bussines-card-inner {
+        background-color: #131026;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bc-content {
+        min-width: 250px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 30px;
+        letter-spacing: 2.5px;
+    }
+
+    .bc-content p {
+        padding: 0.2em;
+    }
+
+    .bc-content .title {
+        position: relative;
+        z-index: 1;
+    }
+
+    .bc-content .title:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 33%;
+        border-bottom: 1px solid white;
+        margin: 0 33%;
+    }
+
+    .bc-content .icon {
+        font-size: 29px;
+        color: #282251;
+    }
+
+    .bc-content .icon:hover {
+        color: #362e6d;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 }
