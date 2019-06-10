@@ -16,7 +16,7 @@ a {
     height: 100vh;
 }
 
-.bussines-card {
+.business-card {
     margin-bottom: 20px;
     position: absolute;
     top: 0;
@@ -27,7 +27,7 @@ a {
     font-weight: lighter;
 }
 
-.bussines-card-inner {
+.business-card-inner {
     background-color: #131026;
     padding: 9px;
 }
@@ -136,7 +136,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-    .bussines-card {
+    .business-card {
         margin: auto;
         padding: 0.4em;
         position: fixed;
@@ -151,7 +151,7 @@ a:hover {
         border: #131026 solid 4px;
     }
 
-    .bussines-card-inner {
+    .business-card-inner {
         position: relative;
         display: inline-block;
         width: 100%;
